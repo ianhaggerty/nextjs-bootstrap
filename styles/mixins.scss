@@ -1,0 +1,20 @@
+@use "./variables" as var;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin card($size) {
+  @include flex-center;
+  width: $size;
+  height: $size/2;
+  padding: $size / 4;
+  color: white;
+  box-shadow: var.$light-box-shadow;
+  background-color: var.$dark-color;
+  border-radius: $size / 40;
+  font-size: 3.5rem;
+  font-family: var.$roboto-font;
+}

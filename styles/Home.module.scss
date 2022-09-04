@@ -1,0 +1,26 @@
+@use "./variables";
+@use "./mixins";
+
+.main {
+  @include mixins.flex-center;
+  flex-direction: column;
+  min-height: 100vh;
+  color: variables.$dark-color;
+}
+
+.card-300 {
+  @include mixins.card(300px);
+
+  p {
+    padding: 0rem 2rem;
+  }
+
+  p:last-of-type {
+    border-left: 1px solid white;
+
+    strong {
+      font-weight: 500;
+      font-style: italic;
+    }
+  }
+}
