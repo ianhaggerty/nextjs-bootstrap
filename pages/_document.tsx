@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import CssBaseline from "@mui/material/CssBaseline";
 
 class MyDocument extends Document {
   render() {
@@ -6,13 +7,14 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,500&display=swap"
             rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
           />
         </Head>
         <body>
           <Main />
           <NextScript />
+          <CssBaseline />
         </body>
       </Html>
     );

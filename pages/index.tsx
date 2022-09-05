@@ -12,7 +12,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <section className={styles["card-300"]}>
+        <section>
           <p>Card</p>
           <p>
             Numero <strong>Uno</strong>
