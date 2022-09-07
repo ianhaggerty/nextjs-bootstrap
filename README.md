@@ -1,34 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NextJS Playground
 
-## Getting Started
+This is an opinionated stack, pulled together in my endless tinkering. Will likely use in production soon.
 
-First, run the development server:
+- NextJS
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+  Offers maximum control over content delivery (SSR, SSG, Client-Side, etc). Future-proof, fast, with tons of tooling.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Redux Toolkit
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+  I love this project, but I prefer redux saga over thunk. Client-side state persisted with redux persist.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- Typescript
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+  Everything is strongly typed for maximum type hinting + minimal fuss.
+  Even redux, actions, selectors, etc... It all comes for free.
 
-## Learn More
+- React-Redux (connect)
 
-To learn more about Next.js, take a look at the following resources:
+  I like to hoist data fetching concerns outside components.
+  Components are cleaner, maintainable, re-usable, etc.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- SASS
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+  With modules, if desired. I love the way Sass makes me think!
+  Maximum re-use = creativity and abstract thinking.
 
-## Deploy on Vercel
+- Supabase with GrapQL
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+  Normalized data + GraphQL = endgame. Supabase makes this ridiculously easy.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+#### Coming soon
+- Redux Saga
+
+  Tough to master, but without a doubt the cleanest + most powerful way to express async logic flows. Dialing into typescript might be challenging though... we shall see.

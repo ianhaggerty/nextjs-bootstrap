@@ -8,12 +8,12 @@ import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 
 import { useState } from "react";
-import type { NextPage } from "next";
 import Head from "next/head";
-
 import { createClient } from "@supabase/supabase-js";
 
 import Copyright from "../components/copyright.cmpt";
+
+import type { NextPage } from "next";
 
 export function getStaticProps() {
   return {

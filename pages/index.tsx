@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import styles from "../styles/Home.module.scss";
-import Counter from "../features/counter/counter";
+
+import styles from "./index.module.scss";
 
 const Home: NextPage = () => {
   return (
@@ -20,7 +20,6 @@ const Home: NextPage = () => {
           </p>
         </section>
       </main>
-      <Counter />
     </div>
   );
 };
