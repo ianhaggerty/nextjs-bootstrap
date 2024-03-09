@@ -1,4 +1,4 @@
-# NextJS Playground
+# NextJS Bootstrap
 
 This is an opinionated stack, pulled together in my endless tinkering. Will likely use in production soon.
 
